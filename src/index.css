@@ -1,2 +1,6 @@
-@import "tailwindcss";
-@source "../.flowbite-react/class-list.json";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Flowbite core styles */
+@import "flowbite";

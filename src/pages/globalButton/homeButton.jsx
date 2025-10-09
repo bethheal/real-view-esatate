@@ -19,7 +19,7 @@ const RentSellButton = () => {
       >
         {/* Highlighted slide background */}
         <div
-          className={`absolute w-1/2 h-full bg-[#ed7d31] transition-all duration-300 ${
+          className={`absolute w-1/2 h-full bg-[#887232] transition-all duration-300 ${
             isRent ? "left-0" : "left-1/2"
           }`}
         ></div>
@@ -29,19 +29,19 @@ const RentSellButton = () => {
           {/* Rent */}
           <div
             className={`w-1/2 text-center flex items-center justify-center gap-1 transition-colors duration-300 ${
-              isRent ? "text-white" : "text-[#ed7d31]"
+              isRent ? "text-white" : "text-[#887232]"
             }`}
           >
-            {isRent ? "Rent" : <LuArrowRight className="text-[#ed7d31]" />}
+            {isRent ? "Rent" : <LuArrowRight className="text-[#887232]" />}
           </div>
 
           {/* Sell */}
           <div
             className={`w-1/2 text-center flex items-center justify-center gap-1 transition-colors duration-300 ${
-              isRent ? "text-[#ed7d31]" : "text-white"
+              isRent ? "text-[#887232]" : "text-white"
             }`}
           >
-            {isRent ? <LuArrowRight className="text-[#ed7d31]" /> : "Sell"}
+            {isRent ? <LuArrowRight className="text-[#887232]" /> : "Sell"}
           </div>
         </div>
       </div>

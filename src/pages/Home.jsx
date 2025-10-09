@@ -11,7 +11,7 @@ const Home = () => {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-90"
         style={{
-          backgroundImage: "url('/your-background-image.jpg')", // replace with your image
+    backgroundImage: `url(${heroIm})`,
         }}
       ></div>
 
@@ -19,7 +19,7 @@ const Home = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/10"></div>
 
       {/* Foreground Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-8">
+      <div className="relative z-10 mt-[15vh] flex flex-col items-center justify-center h-full text-center px-4 sm:px-8">
         {/* Main Title */}
        <h1 className="font-extrabold text-[#ed7d31] text-4xl mb-10"> Real View Estate </h1>
 
@@ -33,7 +33,7 @@ const Home = () => {
 
             {/* Edgy Rent/Sell Buttons */}
             <div className="flex space-x-3">
-              <RentSellButton />
+              <RentSellButton />y
             </div>
           </div>
 

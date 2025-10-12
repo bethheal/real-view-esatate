@@ -1,5 +1,4 @@
-import heroImg from "./heroImg.jpg"; 
+// src/assets/index.js
+import heroImg from './heroImg.jpg'; 
 
-export default{
-    heroImg
-}
+export { heroImg };

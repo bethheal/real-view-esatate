@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import RentSellButton from "./globalButton/homeButton";
+// import { heroImg } from "../assets/index.js";
+import  {heroImg}  from "../assets";
 
 const Home = () => {
   const [price, setPrice] = useState(4000);
@@ -11,7 +13,7 @@ const Home = () => {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-90"
         style={{
-    backgroundImage: `url(${heroIm})`,
+    backgroundImage: `url(${heroImg})`,
         }}
       ></div>
 

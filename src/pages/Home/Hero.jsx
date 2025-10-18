@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import RentSellButton from "./globalButton/homeButton";
+import RentSellButton from "../globalButton/homeButton";
 // import { heroImg } from "../assets/index.js";
-import  {heroImg}  from "../assets";
+import { heroImg } from "../../assets";
 
-const Home = () => {
+const Hero = () => {
   const [price, setPrice] = useState(4000);
   const [area, setArea] = useState(1200);
 
@@ -13,7 +13,7 @@ const Home = () => {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-90"
         style={{
-    backgroundImage: `url(${heroImg})`,
+          backgroundImage: `url(${heroImg})`,
         }}
       ></div>
 
@@ -23,10 +23,13 @@ const Home = () => {
       {/* Foreground Content */}
       <div className="relative z-10 mt-[15vh] flex flex-col items-center justify-center h-full text-center px-4 sm:px-8">
         {/* Main Title */}
-       <h1 className="font-extrabold text-[#ed7d31] text-4xl mb-10"> Real View Estate </h1>
+        <h1 className="font-extrabold text-[#ed7d31] text-4xl mb-10">
+          {" "}
+          Real View Estate{" "}
+        </h1>
 
         {/* Search Section */}
-        <div className="bg-white/95 rounded-2xl shadow-2xl p-6 sm:p-8 w-full max-w-5xl">
+        <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl shadow-2xl p-6 sm:p-8 w-full max-w-5xl">
           {/* Top Row */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6">
             <h2 className="font-semibold text-gray-800 text-lg">
@@ -35,33 +38,33 @@ const Home = () => {
 
             {/* Edgy Rent/Sell Buttons */}
             <div className="flex space-x-3">
-              <RentSellButton />y
+              <RentSellButton />
             </div>
           </div>
 
           {/* Search Filters */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            <select className="w-full border border-gray-300 rounded-md p-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-[#ed7d31]">
+            <select className="w-full border border-gray-300/50 bg-white/40 backdrop-blur-sm rounded-md p-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#ed7d31]">
               <option>Choose Location</option>
               <option>Accra</option>
               <option>Kumasi</option>
             </select>
 
-            <select className="w-full border border-gray-300 rounded-md p-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-[#ed7d31]">
+            <select className="w-full border border-gray-300/50 bg-white/40 backdrop-blur-sm rounded-md p-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#ed7d31]">
               <option>Property Type</option>
               <option>House</option>
               <option>Apartment</option>
               <option>Commercial</option>
             </select>
 
-            <select className="w-full border border-gray-300 rounded-md p-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-[#ed7d31]">
+            <select className="w-full border border-gray-300/50 bg-white/40 backdrop-blur-sm rounded-md p-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#ed7d31]">
               <option>Bedrooms</option>
               <option>1 Bedroom</option>
               <option>2 Bedrooms</option>
               <option>3 Bedrooms</option>
             </select>
 
-            <select className="w-full border border-gray-300 rounded-md p-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-[#ed7d31]">
+            <select className="w-full border border-gray-300/50 bg-white/40 backdrop-blur-sm rounded-md p-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#ed7d31]">
               <option>Bathrooms</option>
               <option>1 Bathroom</option>
               <option>2 Bathrooms</option>
@@ -69,7 +72,7 @@ const Home = () => {
             </select>
           </div>
 
-          {/* Range Sliders with Measurements */}
+          {/* Range Sliders */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
             <div>
               <label className="text-sm font-semibold text-gray-700 flex justify-between">
@@ -118,4 +121,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;

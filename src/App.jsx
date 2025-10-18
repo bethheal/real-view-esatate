@@ -1,51 +1,44 @@
-
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './App.css'
-import RootLayout from './pages/RootLayout'
-import Home from './pages/Home'
-import Contact from './pages/Contact'
-import Services from './pages/Services'
-import Properties from './pages/Properties'
-import FAQ from './pages/FAQ'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./App.css";
+import RootLayout from "./globalComponents/RootLayout";
+import Home from "./pages/Home/Home";
+import Contact from "./pages/Home/Contact";
+import Services from "./pages/Home/Services";
+import Properties from "./pages/Home/Properties";
+import FAQ from "./pages/Home/FAQ";
 
 const router = createBrowserRouter([
-
   {
-    path:'/',
-    Component:RootLayout,
-    children:[
+    path: "/",
+    Component: RootLayout,
+    children: [
       {
         index: true,
-        Component:Home,
+        Component: Home,
       },
 
       {
-        path:'/services',
+        path: "/services",
         Component: Services,
       },
-       {
-        path:'/properties',
+      {
+        path: "/properties",
         Component: Properties,
       },
       {
-        path:'contact',
-        Component:Contact,
+        path: "/contact",
+        Component: Contact,
       },
-       {
-        path:'/help-center',
+      {
+        path: "/help-center",
         Component: FAQ,
       },
-    ]
-  }
-])
+    ],
+  },
+]);
 
 function App() {
-
-  return (
-    <RouterProvider router={router}/>
-  )
-   
-  
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

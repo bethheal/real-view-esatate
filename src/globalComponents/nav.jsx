@@ -95,12 +95,13 @@ const Nav = () => {
 
         {/* Right Section - Auth Buttons */}
         <div className="navbar-end flex items-center gap-3">
-          <button className="bg-[#fff6b6] text-[#887232] font-medium px-4 py-2 rounded-lg hover:bg-[#fff1a8] transition">
+          <NavLink to="/login" className="bg-[#fff6b6] text-[#887232] font-medium px-4 py-2 rounded-lg hover:bg-[#fff1a8] transition">
             Log In
-          </button>
-          <button className="bg-white text-[#887232] font-medium px-4 py-2 rounded-lg hover:bg-[#f6f6f6] transition">
+
+          </NavLink>
+          <NavLink to="signup" className="bg-white text-[#887232] font-medium px-4 py-2 rounded-lg hover:bg-[#f6f6f6] transition">
             Sign Up
-          </button>
+          </NavLink >
         </div>
       </div>
     </nav>

@@ -1,6 +1,8 @@
 [build]
-  command = "npm run build --prefix frontend"
-  publish = "frontend/dist"
+  base = "real-view-esatate/FRONTEND"
+  command = "npm run build"
+  publish = "FRONTEND/dist"
 
 [build.environment]
+  NODE_VERSION = "18"
   NPM_FLAGS = "--include=dev"
